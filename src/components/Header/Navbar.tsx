@@ -34,7 +34,7 @@ export const Navbar = () => {
             <div className={`max-w-5xl mx-auto flex justify-between items-center rounded-full px-6 py-3 transition-all duration-300 ${scrolled ? 'bg-white/70 dark:bg-[#09090b]/70 backdrop-blur-xl border border-slate-200 dark:border-slate-800 shadow-lg' : 'bg-transparent'}`}>
                 <a
                     href="#"
-                    className={`text-lg font-bold font-display tracking-tight transition-colors ${scrolled ? 'text-slate-900 dark:text-white' : 'text-white'}`}
+                    className={`text-lg font-bold font-display tracking-tight transition-colors text-slate-900 dark:text-white`}
                 >
                     B. Akshaya
                 </a>
@@ -45,7 +45,7 @@ export const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${scrolled ? 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800' : 'text-white/70 hover:text-white hover:bg-white/10'}`}
+                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${scrolled ? 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800' : 'text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10'}`}
                         >
                             {link.name}
                         </a>
@@ -55,7 +55,7 @@ export const Navbar = () => {
                 <div className="hidden md:flex items-center">
                     <button
                         onClick={toggleTheme}
-                        className={`p-2.5 rounded-full transition-all ${scrolled ? 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white' : 'text-white/70 hover:bg-white/10 hover:text-white'}`}
+                        className={`p-2.5 rounded-full transition-all ${scrolled ? 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-slate-900 dark:hover:text-white' : 'text-slate-600 dark:text-white/70 hover:bg-slate-100 dark:hover:bg-white/10 hover:text-slate-900 dark:hover:text-white'}`}
                         aria-label="Toggle theme"
                     >
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
@@ -66,13 +66,13 @@ export const Navbar = () => {
                 <div className="md:hidden flex items-center space-x-2">
                     <button
                         onClick={toggleTheme}
-                        className={`p-2 rounded-full transition-colors ${scrolled ? 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800' : 'text-white/70 hover:bg-white/10'}`}
+                        className={`p-2 rounded-full transition-colors ${scrolled ? 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800' : 'text-slate-600 dark:text-white/70 hover:bg-slate-100 dark:hover:bg-white/10'}`}
                     >
                         {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                     </button>
                     <button 
                         onClick={() => setIsOpen(!isOpen)} 
-                        className={`p-2 transition-colors ${scrolled ? 'text-slate-600 dark:text-slate-400' : 'text-white'}`}
+                        className={`p-2 transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white`}
                     >
                         {isOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>

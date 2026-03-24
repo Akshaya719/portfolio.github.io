@@ -130,7 +130,7 @@ and user-centric applications.`;
                         {['MongoDB', 'Express.js', 'React', 'Node.js', 'Docker', 'AWS'].map((tech) => (
                             <span 
                                 key={tech} 
-                                className="px-4 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-300 bg-white/5 border border-white/10 rounded-xl hover:border-blue-500/50 hover:bg-blue-500/1 transition-all cursor-default"
+                                className="px-4 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl hover:border-blue-500/50 hover:bg-blue-50 dark:hover:bg-blue-500/10 transition-all cursor-default"
                             >
                                 {tech}
                             </span>
@@ -146,22 +146,22 @@ and user-centric applications.`;
                     >
                         <a
                             href="#projects"
-                            className="px-8 py-4 bg-white text-black font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-[1.05] active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-blue-500/25"
+                            className="px-8 py-4 bg-slate-900 text-white dark:bg-white dark:text-slate-900 font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-500 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition-all duration-300 transform hover:scale-[1.05] active:scale-95 shadow-xl dark:shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-blue-500/25"
                         >
                             View Projects
                         </a>
                         <a
                             href="https://www.linkedin.com/in/boddu-akshaya-/"
                             target="_blank"
-                            className="px-8 py-4 bg-white/5 border border-slate-700/50 text-white font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center gap-2"
+                            className="px-8 py-4 bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-slate-700/50 text-slate-900 dark:text-white font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-slate-200 dark:hover:bg-white/10 hover:border-slate-400 dark:hover:border-white/20 transition-all duration-300 flex items-center gap-2 group"
                         >
-                            <Linkedin size={16} fill="white" className="opacity-80" />
+                            <Linkedin size={16} className="text-blue-600 dark:text-white opacity-80 group-hover:opacity-100" />
                             Connect
                         </a>
                         <a
                             href="/resume_portfolio.pdf"
                             download="B_Akshaya_Resume_Portfolio.pdf"
-                            className="px-8 py-4 border border-blue-500/30 text-blue-400 font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-500/10 hover:border-blue-500 transition-all duration-300 flex items-center gap-2"
+                            className="px-8 py-4 border border-blue-500 text-blue-600 dark:border-blue-500/30 dark:text-blue-400 font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-50 dark:hover:bg-blue-500/10 hover:border-blue-600 dark:hover:border-blue-500 transition-all duration-300 flex items-center gap-2"
                         >
                             <Download size={16} /> 
                             Download Resume
@@ -246,7 +246,7 @@ and user-centric applications.`;
                         key={i}
                         href={link.href}
                         whileHover={{ scale: 1.2, x: -5 }}
-                        className="text-slate-500 hover:text-white transition-colors p-2"
+                        className="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors p-2"
                         aria-label={link.label}
                     >
                         {link.icon}

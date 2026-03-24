@@ -120,8 +120,8 @@ export const About = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
-                            <h2 className="text-5xl md:text-6xl font-black text-white mb-8 tracking-tighter leading-none">
-                                Engineering <br />
+                            <h2 className="text-5xl md:text-6xl font-black mb-8 tracking-tighter leading-none">
+                                <span className="text-slate-900 dark:text-white">Engineering</span> <br />
                                 <span className="text-blue-500">Persona.</span>
                             </h2>
                             
