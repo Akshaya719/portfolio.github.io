@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-primary: #f8fafc; /* light mode text */
+  --color-primary-dark: #020617; /* dark mode text */
+  
+  --color-background-light: #fdfdfd;
+  --color-background-dark: #09090b;
+
+  --color-accent: #3b82f6;
+  --color-border-light: #e5e7eb;
+  --color-border-dark: #27272a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    @apply antialiased text-slate-800 bg-white dark:text-slate-200 dark:bg-[#09090b] transition-colors duration-300;
+  }
+
+  ::selection {
+    @apply bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-slate-900 dark:text-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-grid-white {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+  .bg-grid-black {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
