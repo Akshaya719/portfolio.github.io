@@ -9,7 +9,7 @@ const certificates = [
         date: '2024',
         category: 'Cloud',
         description: 'Comprehensive study of cloud architecture, virtualization, and distributed systems management.',
-        credentialUrl: '/certificates/Cloud_Computing.pdf',
+        credentialUrl: './certificates/Cloud_Computing.pdf',
         isAvailable: true,
         brandColor: '#FF9900'
     },
@@ -19,7 +19,7 @@ const certificates = [
         date: 'Jun 2024',
         category: 'Engineering',
         description: 'Mastered architectural patterns, UML modeling, and complex system design tasks.',
-        credentialUrl: '/certificates/walmart_forage_certificate.pdf',
+        credentialUrl: './certificates/walmart_forage_certificate.pdf',
         isAvailable: true,
         brandColor: '#0071CE'
     },
@@ -29,7 +29,7 @@ const certificates = [
         date: '2024',
         category: 'Backend',
         description: 'Demonstrated fundamental knowledge of Node.js concepts and practical implementations.',
-        credentialUrl: '/certificates/nodejs_basic_certificate.pdf',
+        credentialUrl: './certificates/nodejs_basic_certificate.pdf',
         isAvailable: true,
         brandColor: '#2EC866'
     },
@@ -39,7 +39,7 @@ const certificates = [
         date: '2024',
         category: 'Problem Solving',
         description: 'Demonstrated strong object-oriented and algorithmic skills with Java basic concepts.',
-        credentialUrl: '/certificates/java_basic_certificate.pdf',
+        credentialUrl: './certificates/java_basic_certificate.pdf',
         isAvailable: true,
         brandColor: '#E76F00'
     },
