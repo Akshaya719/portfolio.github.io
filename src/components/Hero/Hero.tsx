@@ -160,7 +160,7 @@ and user-centric applications.`;
                             Connect
                         </a>
                         <a
-                            href="/resume portfolio.pdf"
+                            href="/resume_portfolio.pdf"
                             download="B_Akshaya_Resume_Portfolio.pdf"
                             className="px-8 py-4 border border-blue-500/30 text-blue-400 font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-500/10 hover:border-blue-500 transition-all duration-300 flex items-center gap-2"
                         >
