@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Github, Linkedin, Twitter, Download, Code, Copy, Server } from 'lucide-react';
+import { Mail, Github, Linkedin, Download, Code, Copy, Server } from 'lucide-react';
 
 const roles = [
     'Full Stack Developer',
@@ -54,9 +54,8 @@ and user-centric applications.`;
 
     const socialLinks = [
         { icon: <Mail size={18} />, href: "mailto:akshaya@example.com", label: "Email" },
-        { icon: <Linkedin size={18} />, href: "https://linkedin.com", label: "LinkedIn" },
-        { icon: <Github size={18} />, href: "https://github.com", label: "GitHub" },
-        { icon: <Twitter size={18} />, href: "https://twitter.com", label: "Twitter" },
+        { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/boddu-akshaya-/", label: "LinkedIn" },
+        { icon: <Github size={18} />, href: "https://github.com/Akshaya719", label: "GitHub" },
     ];
 
     if (!mounted) return null;
@@ -152,7 +151,7 @@ and user-centric applications.`;
                             View Projects
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/boddu-akshaya-/"
                             target="_blank"
                             className="px-8 py-4 bg-white/5 border border-slate-700/50 text-white font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300 flex items-center gap-2"
                         >
@@ -160,7 +159,7 @@ and user-centric applications.`;
                             Connect
                         </a>
                         <a
-                            href="./resume portfolio.pdf"
+                            href="/resume_portfolio.pdf"
                             download="B_Akshaya_Resume_Portfolio.pdf"
                             className="px-8 py-4 border border-blue-500/30 text-blue-400 font-bold text-xs uppercase tracking-widest rounded-2xl hover:bg-blue-500/10 hover:border-blue-500 transition-all duration-300 flex items-center gap-2"
                         >
